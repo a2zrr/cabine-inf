@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cabinet
+    xmlns="http://www.univ-grenoble-alpes.fr/l3miage/medical"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.univ-grenoble-alpes.fr/l3miage/medical cabinet.xsd"
+>
+
+    <nom>Soins a Grenoble</nom>
+
+    <adresse>
+        <numero>60</numero>
+        <rue>rue de la Chimie</rue>
+        <codePostal>38401</codePostal>
+        <ville>Grenoble</ville>
+    </adresse>
+
+
+    <!-- list of our infirmiers -->
+    <infirmiers>
+        <infirmier id="001">
+            <nom>Frechie</nom>
+            <prenom>Sarah</prenom>
+            <photo>sarah.png</photo>
+        </infirmier>
+        <infirmier id="002">
+            <nom>Sticke</nom>
+            <prenom>Sophie</prenom>
+            <photo>sophie.jpg</photo>
+        </infirmier>
+        <infirmier id="003">
+            <nom>Ochon</nom>
+            <prenom>Paul</prenom>
+            <photo>paul.png</photo>
+        </infirmier>
+    </infirmiers>
+
+
+    <!-- list of our pation -->
+    <patients>
+
+        <!-- Patient 1 -->
+        <patient>
+            <nom>Alecole</nom>
+            <prenom>Yvon</prenom>
+            <sexe>M</sexe>
+            <naissance>1998-08-22</naissance>
+            <numero>198082205545852</numero>
+            <adresse>
+                <etage>6</etage>
+                <numero>50</numero>
+                <rue>avenue Felix Viallet</rue>
+                <codePostal>38031</codePostal>
+                <ville>grenoble</ville>
+            </adresse>
+            <visite date="2015-12-08" intervenant="001">
+                <acte id="109">Soins infirmiers a domicile</acte>
+            </visite>
+        </patient>
+
+        <!-- Patient 2-->
+        <patient>
+            <nom>Orouge</nom>
+            <prenom>Elvire</prenom>
+            <sexe>F</sexe>
+            <naissance>1982-03-08</naissance>
+            <numero>282036902305218</numero>
+            <adresse>
+                <rue>Rond-Point de la Croix de Vie</rue>
+                <codePostal>38700</codePostal>
+                <ville>La Tronche</ville>
+            </adresse>
+
+            <!-- L'infirmiere pas encore ete affectee -->
+            <visite date="2015-12-08">
+                <acte id="104">Pansement de brulure etendue</acte>
+            </visite>
+        </patient>
+
+
+        <!-- patient 3-->
+        <patient>
+            <nom>Pien</nom>
+            <prenom>Oscare</prenom>
+            <sexe>M</sexe>
+            <naissance>1975-03-25</naissance>
+            <numero>275037306569202</numero>
+            <adresse>
+                <rue>rue Casimir Brenier</rue>
+                <codePostal>38000</codePostal>
+                <ville>Grenoble</ville>
+            </adresse>
+            <visite date="2015-12-08" intervenant="002">
+                <acte id="101">une ponction veineuse directe </acte>
+                <acte id="102">une injection intraveineuse directe isolee d'anthalgiques</acte>
+            </visite>
+        </patient>
+
+
+        <!-- patient 4 -->
+        <patient>
+            <nom>Kapoetla</nom>
+            <prenom>Xavier</prenom>
+            <sexe>M</sexe>
+            <naissance>2011-08-02</naissance>
+            <numero>111083306303521</numero>
+            <adresse>
+                <numero>25</numero>
+                <rue>rue des Martyrs</rue>
+                <codePostal>38042</codePostal>
+                <ville>Grenoble</ville>
+            </adresse>
+            <visite date="2015-12-08" intervenant="003">
+                <acte id="103">pour recevoir l'injection de plusieurs allergenesafin d'etre desensibilise</acte>
+            </visite>
+        </patient>
+    </patients>
+</cabinet>

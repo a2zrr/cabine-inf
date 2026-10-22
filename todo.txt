@@ -1,0 +1,5 @@
+5 )
+- num de securite social rex
+- Conformité de l’instance XML et du XMLSchema avec C#
+- Validation de l’instance XML vis-à-vis
+

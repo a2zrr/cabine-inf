@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ngap>
+    <types>
+        <type id="pi">prélèvements et injections</type>
+        <type id="pc">pansements courants</type>
+        <type id="pl">pansements lourds et complexes nécessitant des conditions d'asepsie rigoureuse</type>
+        <type id="sd">Soins infirmiers à domicile pour un patient, quel que soit son âge, en situation de dépendance temporaire ou permanente.</type>
+    </types>
+    <actes>
+        <acte id="101" type="pi" clé="AMI" coef="1.5">Prélèvement par ponction veineuse directe</acte>
+        <acte id="102" type="pi" clé="AMI" coef="5">Saignée</acte>
+        <acte id="103" type="pi" clé="AMI" coef="1">Prélèvement aseptique cutané ou de sécrétions muqueuses</acte>
+        <acte id="104" type="pl" clé="AMI" coef="4">Pansement de brûlure étendue</acte>
+        <acte id="109" type="sd" clé="AIS" coef="3">Soins infirmiers à domicile</acte>
+    </actes>
+</ngap>
