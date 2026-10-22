@@ -6,6 +6,7 @@
            elementFormDefault="qualified"
     >
 
+
     <xs:include schemaLocation="patient.xsd" />
 
     <xs:element name="cabinet" type="Cabinet">
@@ -37,7 +38,7 @@
     <!-- on a 3 infirmieres, mais on peux s'agrandir-->
     <xs:complexType name="Infirmiers">
         <xs:sequence>
-            <xs:element name="infirmier" type="Infirmier" minOccurs="3" maxOccurs="unbounded" />
+            <xs:element name="infirmier" type="Infirmier"  maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
 
