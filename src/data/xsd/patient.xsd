@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema targetNamespace="http://www.univ-grenoble-alpes.fr/l3miage/medical"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns="http://www.univ-grenoble-alpes.fr/l3miage/medical"
-    xmlns:ci="http://www.univ-grenoble-alpes.fr/l3miage/medical"
-    elementFormDefault="qualified"
->
-
-
-    <xs:element name="cabinet" type="Cabinet">
-
-
-        <!--  unique idInfirmier -->
-        <xs:key name="UniqueIdInfirmier">
-            <xs:selector xpath="ci:infirmiers/ci:infirmier" />
-            <xs:field xpath="@id" />
-        </xs:key>
-
-
-        <xs:keyref name="visiteIntervenant" refer="UniqueIdInfirmier">
-            <xs:selector xpath="ci:patients/ci:patient/ci:visite" />
-            <xs:field xpath="@intervenant"/>
-        </xs:keyref>
-
-    </xs:element>
-
-
-    <!-- type Cabinet-->
-    <xs:complexType name="Cabinet">
-        <xs:sequence>
-            <xs:element name="nom" />
-            <xs:element name="adresse" type="Adresse" />
-            <xs:element name="infirmiers" type="Infirmiers" />
-            <xs:element name="patients" type="Patients" />
-        </xs:sequence>
-    </xs:complexType>
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.univ-grenoble-alpes.fr/l3miage/medical"
+           elementFormDefault="qualified"
+    >
 
     <!-- type adresse-->
     <xs:complexType name="Adresse">
@@ -46,38 +16,16 @@
         </xs:sequence>
     </xs:complexType>
 
-
-    <!-- type Infirmiers -->
-    <!-- on a 3 infirmieres, mais on peux s'agrandir-->
-    <xs:complexType name="Infirmiers">
-        <xs:sequence>
-            <xs:element name="infirmier" type="Infirmier" minOccurs="3" maxOccurs="unbounded" />
-        </xs:sequence>
-    </xs:complexType>
-
-
-    <!-- type Infirmier-->
-    <xs:complexType name="Infirmier">
-        <xs:sequence>
-            <xs:element name="nom" />
-            <xs:element name="prenom" />
-            <xs:element name="photo" type="xs:anyURI" />
-        </xs:sequence>
-        <xs:attribute name="id" type="IdInfirmier" use="required" />
-    </xs:complexType>
-
-
     <!-- type Patients -->
     <!--we
-    can have 0 Patients
-     nd also we can have a lot of Patients
-     -->
+         can have 0 Patients
+         nd also we can have a lot of Patients
+    -->
     <xs:complexType name="Patients">
         <xs:sequence>
             <xs:element name="patient" type="Patient" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
-
 
     <!-- type Patients -->
     <xs:complexType name="Patient">
@@ -92,7 +40,6 @@
         </xs:sequence>
     </xs:complexType>
 
-
     <!-- type Visite -->
     <xs:complexType name="Visite">
         <xs:sequence>
@@ -102,7 +49,6 @@
         <xs:attribute name="intervenant" type="IdInfirmier" />
     </xs:complexType>
 
-
     <!-- type Acte -->
     <xs:complexType name="Acte">
         <xs:simpleContent>
@@ -111,7 +57,6 @@
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
-
 
     <!-- id infirmier 3 chifres-->
     <xs:simpleType name="IdInfirmier">
@@ -127,9 +72,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-
     <!-- le code postal (un nombre a 5 chiffres) -->
-
     <xs:simpleType name="CodePostal">
         <xs:restriction base="xs:string">
             <xs:pattern value="\d{5}" />
@@ -143,14 +86,5 @@
             <xs:enumeration value="F" />
         </xs:restriction>
     </xs:simpleType>
-
-
-    <!-- type Photo -->
-    <!-- <xs:simpleType name="Photo">
-        <xs:restriction base="xs:string">
-            <xs:pattern value=".+\.(png|jpg|jpeg)" />
-        </xs:restriction>
-    </xs:simpleType> -->
-
 
 </xs:schema>
