@@ -123,7 +123,7 @@
     <!-- the type Numero Securite sociale-->
     <xs:simpleType name="NumeroSecu">
         <xs:restriction base="xs:string">
-            <xs:pattern value="\d{15}" />
+            <xs:pattern value="[12][0-9]{14}" />
         </xs:restriction>
     </xs:simpleType>
 
