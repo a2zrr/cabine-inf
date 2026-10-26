@@ -1,9 +1,1 @@
-5 )
-- add the uml 
-- num de securite social rex and changing the name of it to NIR
-- Conformité de l’instance XML et du XMLSchema avec C#
-- Validation de l’instance XML vis-à-vis 
-- do the 5.6 and the 5.7 part 
 
-6)
-- cree le CV
