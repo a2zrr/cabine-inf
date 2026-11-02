@@ -1,0 +1,15 @@
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\bin\Debug\net10.0\ValidationCabinet.exe
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\bin\Debug\net10.0\ValidationCabinet.deps.json
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\bin\Debug\net10.0\ValidationCabinet.runtimeconfig.json
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\bin\Debug\net10.0\ValidationCabinet.dll
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\bin\Debug\net10.0\ValidationCabinet.pdb
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.AssemblyInfo.cs
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.sourcelink.json
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.dll
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\refint\ValidationCabinet.dll
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.pdb
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ValidationCabinet.genruntimeconfig.cache
+C:\Users\Dell\Desktop\cabine_test\cabine-inf\ValidationCabinet\obj\Debug\net10.0\ref\ValidationCabinet.dll
