@@ -3,7 +3,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:med="http://www.univ-grenoble-alpes.fr/l3miage/medical">
 
-  <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+  <xsl:output method="html" encoding="UTF-8"/>
 
   <!-- Page -->
   <xsl:template match="/">
