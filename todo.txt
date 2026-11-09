@@ -1,1 +1,1 @@
-
+To run the xslt use this : xmllint --noout xml/cabinet.xml xslt/cabinet.xsl
