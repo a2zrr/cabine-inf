@@ -52,11 +52,4 @@
         <xs:attribute name="id" type="IdInfirmier" use="required" />
     </xs:complexType>
 
-    <!-- type Photo -->
-    <!-- <xs:simpleType name="Photo">
-         <xs:restriction base="xs:string">
-         <xs:pattern value=".+\.(png|jpg|jpeg)" />
-         </xs:restriction>
-         </xs:simpleType> -->
-
 </xs:schema>
